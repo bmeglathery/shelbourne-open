@@ -9,11 +9,15 @@
     body {
       display: flex; align-items: center; justify-content: center;
       background: white; color: green;
-      /* background: black; color: red; */
       font: 900 50vw/1 system-ui, sans-serif;
     }
   </style>
 </head>
-<body>Shelbourne is OPEN</body>
-<!-- <body>NO</body> -->
+<body>
+  <span>Shelbourne is OPEN</span>
+  <p>Page Last Updated: <span id="last-updated"></span></p>
+  <script>
+    document.getElementById('last-updated').textContent = document.lastModified;
+  </script>
+</body>
 </html>
